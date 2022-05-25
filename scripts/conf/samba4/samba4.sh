@@ -1,9 +1,9 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
 # Data de criação: 01/02/2019
 # Data de atualização: 06/02/2019
 # Versão: 0.03
@@ -53,7 +53,7 @@ LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 #
 # Variáveis de configuração do Kerberos e SAMBA4
 REALM="biblioteca.itauna.mg.gov.intra"
-NETBIOS="PTI"
+NETBIOS="PMI"
 DOMAIN="biblioteca.itauna.mg.gov.intra"
 FQDN="pmi01bl01.biblioteca.itauna.mg.gov.intra"
 IP="191.168.200.33"
@@ -330,7 +330,7 @@ echo -e "Promovendo o SAMBA-4 como Controlador de Domínio do Active Directory A
 	systemctl start samba-ad-dc.service &>> $LOG
 	
 	#
-	net rpc rights grant 'PTI\Domain Admins' SeDiskOperatorPrivilege -U $USER%$PASSWORD &>> $LOG
+	net rpc rights grant 'PMI\Domain Admins' SeDiskOperatorPrivilege -U $USER%$PASSWORD &>> $LOG
 	
 	#
 	samba-tool dns zonecreate $DOMAIN $ARPA -U $USER --password=$PASSWORD &>> $LOG

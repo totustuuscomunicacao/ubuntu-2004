@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 16/10/2021
 # Data de atualização: 19/05/2022
 # Versão: 0.13
@@ -42,7 +42,7 @@
 # Site Oficial do Projeto MariaDB: https://mariadb.org/
 #
 # ============================== EM DESENVOLVIMENTO E ANÁLISE DE BUGS ==============================
-# VEJA O ARQUIVO: https://github.com/totustuuscomunicacao/ubuntu-2004/blob/main/BUGS PARA MAIS INFORMAÇÕES
+# VEJA O ARQUIVO: https://github.com/vaamonde/ubuntu-2004/blob/main/BUGS PARA MAIS INFORMAÇÕES
 # 0020 - Falha de autenticação dos Cliente do MySQL Server e do MySQL Workbench
 #
 # DO DO MATERIAL DE APOIO E ESTUDO PARA A RESOLUÇÃO DAS FALHAS DO MYSQL COM SUPORTE AO TLS/SSL OPENSSL
@@ -266,7 +266,7 @@ echo -e "Criando o arquivo CSR (Certificate Signing Request), confirme as mensag
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
 	# 	Common Name (eg, server FQDN or YOUR name): biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
-	# 	Email Address: administrador@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
+	# 	Email Address: pti@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
 	#
 	openssl req -new -$CRIPTOCERT -nodes -key /etc/ssl/private/mysql.key -out \
 	/etc/ssl/requests/mysql.csr -extensions v3_req -config /etc/ssl/mysql.conf

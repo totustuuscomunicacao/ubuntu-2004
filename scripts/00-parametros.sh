@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 10/10/2021
 # Data de atualização: 19/05/2022
 # Versão: 0.66
@@ -565,12 +565,12 @@ CREATE_TABLE_JAVAEE="CREATE TABLE contatos (
 # 02. cat /etc/ssl/index.txt.attr = arquivo de configuração dos atributos da base de dados do OpenSSL
 # 03. cat /etc/ssl/serial = arquivo de configuração da geração serial dos certificados
 # 04. ls -lh /etc/ssl/ = vários arquivos de configuração dos certificados do OpenSSL
-# 05. ls -lh /etc/ssl/certs/pti-ca.pem = unidade certificada raiz confiável do OpenSSL
+# 05. ls -lh /etc/ssl/certs/pmi01bl01-ca.pem = unidade certificada raiz confiável do OpenSSL
 #
 # Variáveis utilizadas na geração das chaves privadas/públicas dos certificados do OpenSSL
 #
 # Variável da senha utilizada na geração das chaves privadas/públicas da CA e dos certificados
-PASSPHRASE="administrador"
+PASSPHRASE="pmi@2022"
 #
 # Variável do tipo de criptografia da chave privada com as opções de: -aes128, -aes192, -aes256, 
 # -camellia128, -camellia192, -camellia256, -des, -des3 ou -idea, padrão utilizado: -aes256

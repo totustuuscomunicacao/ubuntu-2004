@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 10/10/2021
 # Data de atualização: 09/02/2022
 # Versão: 0.21
@@ -45,7 +45,7 @@ sudo timedatectl
 # Configuração de Data e Hora do Sistema Operacional Ubuntu Server
 sudo date
 sudo date +%d/%m/%Y
-sudo date -s 05/22/2022	(-s=set, Mês, Dia e Ano)
+sudo date -s 03/25/2019	(-s=set, Mês, Dia e Ano)
 sudo date +%H:%M:%S
 sudo date -s 13:30:00 (-s=set, Hora, Minuto, Segundos)
 #

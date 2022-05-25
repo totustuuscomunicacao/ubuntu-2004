@@ -1,9 +1,9 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
 # Data de criação: 28/05/2021
 # Data de atualização: 28/05/2021
 # Versão: 0.01
@@ -171,19 +171,19 @@ echo -e "Criando o Virtual Host do Domínio biblioteca.itauna.mg.gov.intra no Ap
 	mkdir -v /var/www/html/biblioteca.itauna.mg.gov.intra &>> $LOG
 	chown -Rv www-data:www-data /var/www/html/biblioteca.itauna.mg.gov.intra &>> $LOG
 	chmod -Rv 755 /var/www/html/biblioteca.itauna.mg.gov.intra &>> $LOG
-	cp -v conf/biblioteca.itauna.mg.gov.conf /etc/apache2/sites-available/biblioteca.itauna.mg.gov.conf &>> $LOG
+	cp -v conf/pmi01bl01-intra.conf /etc/apache2/sites-available/pmi01bl01-intra.conf &>> $LOG
 echo -e "Virtual Host criado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo do Virtual Host do Apache2 biblioteca.itauna.mg.gov.conf, Pressione <Enter> para continuar."
+echo -e "Editando o arquivo do Virtual Host do Apache2 pmi01bl01-intra.conf, Pressione <Enter> para continuar."
 	read
-	vim /etc/apache2/sites-available/biblioteca.itauna.mg.gov.conf
+	vim /etc/apache2/sites-available/pmi01bl01-intra.conf
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Habilitando o Virtual Host do Apache2, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
-	a2ensite biblioteca.itauna.mg.gov.conf &>> $LOG
+	a2ensite pmi01bl01-intra.conf &>> $LOG
 	a2dissite 000-default.conf &>> $LOG
 	apache2ctl configtest &>> $LOG
 echo -e "Virtual Host do Apache2 habilitado com sucesso!!!, continuando com o script...\n"

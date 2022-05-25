@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 10/10/2021
 # Data de atualização: 20/01/2022
 # Versão: 0.20
@@ -88,7 +88,7 @@ sudo netplan --debug apply
 sudo netplan ip leases ens160
 sudo systemd-resolve --status
 sudo ifconfig ens160
-sudo ip address show ens160 
+sudo ip address show enp3s0 
 sudo route -n
 sudo ip route
 #
@@ -111,7 +111,7 @@ sudo netplan --debug try
 sudo netplan --debug apply
 sudo systemd-resolve --status
 sudo ifconfig ens160
-sudo ip address show ens160 
+sudo ip address show enp3s0 
 sudo route -n
 sudo ip route
 #
@@ -139,7 +139,7 @@ sudo netplan --debug try
 sudo netplan --debug apply
 sudo systemd-resolve --status
 sudo ifconfig ens160
-sudo ip address show ens160 
+sudo ip address show enp3s0 
 sudo route -n
 sudo ip route
 #
@@ -167,7 +167,7 @@ sudo netplan --debug try
 sudo netplan --debug apply
 sudo systemd-resolve --status
 sudo ifconfig ens160
-sudo ip address show ens160 
+sudo ip address show enp3s0 
 sudo route -n
 sudo ip route
 #
@@ -204,7 +204,7 @@ sudo netplan --debug try
 sudo netplan --debug apply
 sudo systemd-resolve --status
 sudo ifconfig ens160
-sudo ip address show ens160
+sudo ip address show enp3s0
 sudo route -n
 sudo ip route
 #
@@ -326,7 +326,7 @@ network:
 			nameservers:
 				addresses: [192.168.0.1, 8.8.8.8]
 			access-points:
-				"biblioteca.itauna.mg.gov-intra":
+				"pmi01bl01-intra":
 				password: "123456"
 	version: 2
 #

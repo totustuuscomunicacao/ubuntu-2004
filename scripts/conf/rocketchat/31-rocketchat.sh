@@ -1,9 +1,9 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
 # Data de criação: 04/08/2020
 # Data de atualização: 05/05/2021
 # Versão: 0.07
@@ -17,7 +17,7 @@
 #
 # Informações que serão solicitadas na configuração via Web do Rocket.Chat
 # Passo 1: Informação de administração
-#   Nome: Jefferson Augusto
+#   Nome: Robson Vaamonde
 #   Nome de usuário: administrador
 #   E-mail da Organização: administrador@biblioteca.itauna.mg.gov.intra
 #   Senha: administrador <Continuar>

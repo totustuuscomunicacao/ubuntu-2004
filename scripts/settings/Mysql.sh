@@ -1,12 +1,12 @@
-#Autor: Jefferson Augusto
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+#Autor: Robson Vaamonde
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 10/10/2021
 # Data de atualização: 20/01/2022
 # Versão: 0.20
@@ -26,8 +26,8 @@ sudo apt update && sudo apt install phpmyadmin (precisa do Apache2 e PHP)
 # Políticas de Segurança do MySQL
 sudo mysql_secure_installation
 1. Connecting to MySQL using a blank password (Press y|Y for Yes, any other key for No:) <Enter>
-2. New password root: 123456 <Enter>
-3. Re-enter new password root: 123456 <Enter>
+2. New password root: administrador <Enter>
+3. Re-enter new password root: administrador <Enter>
 4. Remove anonymous users? (Press y|Y for Yes, any other key for No:) y <Enter>
 5. Disallow root login remotely (Press y|Y for Yes, any other key for No:) <Enter>
 6. Remove test database and access to it? (Press y|Y for Yes, any other key for No:) <Enter>
@@ -38,8 +38,8 @@ sudo mysql_secure_installation
 sudo mysql_secure_installation
 1. Enter current password for root (enter for none): 123456 <Enter>
 2. Change the root password? [Y/n]: y <Enter>
-3. New password: 123456 <Enter>
-4. Re-enter new password: 123456 <Enter>
+3. New password: administrador <Enter>
+4. Re-enter new password: administrador <Enter>
 5. Remove anonymous users? [Y/n]: y <Enter>
 6. Disallow root login remotely? [Y/n]: n <Enter>
 7. Remove test database and access to it? [Y/n]: n <Enter>
@@ -144,7 +144,7 @@ SHOW TABLES;
 # Utilizando o conceito do CRUD (Create INSERT, Read SELECT, Update UPDATE and Delete DELETE) no SGBD MySQL ou MariaDB
 #
 # Inserindo dados dentro da Tabela Alunos no SGBD do MySQL ou MariaDB
-INSERT INTO alunos VALUES ('000001', 'Jefferson Augusto', 'Guarulhos');
+INSERT INTO alunos VALUES ('000001', 'Robson Vaamonde', 'Guarulhos');
 INSERT INTO alunos VALUES ('000002', 'Leandro Ramos', 'São Paulo');
 INSERT INTO alunos VALUES ('000003', 'José de Assis', 'São Paulo');
 SELECT * FROM alunos;

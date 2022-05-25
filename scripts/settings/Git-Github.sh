@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 10/10/2021
 # Data de atualização: 20/01/2022
 # Versão: 0.20
@@ -24,7 +24,7 @@ sudo apt update && sudo apt install git vim python
 
 #Configuração do Git Localmente
 	#Seu nome completo que vai ser utilizado em qualquer commit (confirmação) recém-criado.
-	git config --global user.name "Jefferson Augusto"
+	git config --global user.name "Robson Vaamonde"
 	
 	#Seu endereço de e-mail que vai ser utilizado em qualquer commit (confirmação) recém-criado.
 	git config --global user.email robsonadministrador@gmail.com
@@ -57,8 +57,8 @@ https://github.com
 		Edit: Description (Emoji) - Website: http://www.boraparapratica.com.br
 			(https://gist.github.com/rxaviers/7360908)
 		Manage topics: git github bash shell linux linux-mint
-			Link: https://github.com/totustuuscomunicacao/devops.git
-			Link: https://github.com/totustuuscomunicacao/devops
+			Link: https://github.com/vaamonde/devops.git
+			Link: https://github.com/vaamonde/devops
 	
 	Create new file: 	teste01.sh
 						Edit new file: Criando nosso primeiro script em Shell
@@ -84,7 +84,7 @@ Link da geração do Token: https://github.com/settings/tokens
 Gerando um novo Token
 
 #Clonando um Repositório Remoto do Github.
-git clone https://github.com/totustuuscomunicacao/devops.git
+git clone https://github.com/vaamonde/devops.git
 cd devops
 ls -lha
 

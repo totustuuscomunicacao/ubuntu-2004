@@ -1,13 +1,13 @@
-Autor: Jefferson Augusto<br>
-Procedimentos em TI: http://totustuuscomunicacao.com.br<br>
+Autor: Robson Vaamonde<br>
+Procedimentos em TI: http://procedimentosemti.com.br<br>
 Bora para Prática: http://boraparapratica.com.br<br>
-Jefferson Augusto: http://administrador.com.br<br>
-Facebook Procedimentos em TI: https://www.facebook.com/totustuuscomunicacao<br>
+Robson Vaamonde: http://administrador.com.br<br>
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
 Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-LinkedIn Jefferson Augusto: https://www.linkedin.com/in/jefferson-augusto-5759b87b/<br>
-Github Procedimentos em TI: https://github.com/totustuuscomunicacao<br>
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
+Github Procedimentos em TI: https://github.com/vaamonde<br>
 Data de criação: 10/10/2021<br>
 Data de atualização: 02/03/2022<br>
 Versão: 0.04<br>
@@ -141,7 +141,7 @@ Instalação do Ubuntu Server: https://ubuntu.com/server/docs/installation
 	_	Confirm destructive action
 	_		<Continue>
 	_ 09. Profile setup
-	_ 		Your name: Jefferson Augusto <Tab>
+	_ 		Your name: Robson Vaamonde <Tab>
 	_ 		Your server's name: pmi01bl01 <Tab>
 	_ 		Pick a username: administrador <Tab>
 	_ 		Choose a passwords: 123456 <Tab>

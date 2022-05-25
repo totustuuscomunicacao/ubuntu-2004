@@ -1,9 +1,9 @@
 #!/bin/bash
-# Modificado por: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
+# Modificado por: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
 # Data de criação: 14/09/2021
 # Data de atualização: 17/09/2021
 # Versão: 0.02
@@ -237,7 +237,7 @@ case "$1" in
 	echo "======================================================================|"
 	echo "FIREWALL ATIVADO - SISTEMA PREPARADO E FUNCIONANDO PERFEITAMENTE"
 	echo "SCRIPT DE FIREWALL CRIADO POR :-) MARCELO MAGNO :-) - TODOS OS CRÉDITOS"
-	echo "SCRIPT DE FIREWALL MODIFICADO POR: Jefferson Augusto - Procedimentos em TI ;-)"
+	echo "SCRIPT DE FIREWALL MODIFICADO POR: Robson Vaamonde - Procedimentos em TI ;-)"
 	;;
 	#
 	# Início do Script de Firewall IPTables, utilizando o comando case (opção: stop)
@@ -269,7 +269,7 @@ case "$1" in
 	echo "======================================================================|"
 	echo "FIREWALL INATIVO - SISTEMA PARADO E LIBERADO TODAS AS REGRAS"
 	echo "SCRIPT DE FIREWALL CRIADO POR: MARCELO MAGNO :-) - TODOS OS CRÉDITOS"
-	echo "SCRIPT DE FIREWALL MODIFICADO POR: Jefferson Augusto - Procedimentos em TI ;-)"
+	echo "SCRIPT DE FIREWALL MODIFICADO POR: Robson Vaamonde - Procedimentos em TI ;-)"
 	;;
 	#
 	# Início do Script de Firewall IPTables, utilizando o comando case (opção: restart)
@@ -303,7 +303,7 @@ case "$1" in
 	echo ":FIM DA LISTAGEM DAS REGRAS DE FIREWALL NETFILTER ATRAVÉS DO IPTABLES:|"
 	echo "======================================================================|"
 	echo "SCRIPT DE FIREWALL CRIADO POR: MARCELO MAGNO :-) - TODOS OS CRÉDITOS"
-	echo "SCRIPT DE FIREWALL MODIFICADO POR: Jefferson Augusto - Procedimentos em TI ;-)"
+	echo "SCRIPT DE FIREWALL MODIFICADO POR: Robson Vaamonde - Procedimentos em TI ;-)"
 	;;
 	#
 	# Início do Script de Firewall IPTables, utilizando o comando case (opção: *)	

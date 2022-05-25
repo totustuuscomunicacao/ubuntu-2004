@@ -1,14 +1,14 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Procedimentos em TI: http://totustuuscomunicacao.com.br
+# Autor: Robson Vaamonde
+# Procedimentos em TI: http://procedimentosemti.com.br
 # Bora para Prática: http://boraparapratica.com.br
-# Jefferson Augusto: http://administrador.com.br
-# Facebook Procedimentos em TI: https://www.facebook.com/totustuuscomunicacao
+# Robson Vaamonde: http://administrador.com.br
+# Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
 # Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
 # Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 # YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
-# LinkedIn Jefferson Augusto: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Github: https://github.com/totustuuscomunicacao
+# LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Github: https://github.com/vaamonde
 # Data de criação: 23/07/2021
 # Data de atualização: 26/11/2021
 # Versão: 0.05

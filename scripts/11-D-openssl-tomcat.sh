@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 16/10/2021
 # Data de atualização: 11/05/2022
 # Versão: 0.13
@@ -256,7 +256,7 @@ echo -e "Criando o arquivo CSR (Certificate Signing Request), confirme as mensag
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
 	# 	Common Name (eg, server FQDN or YOUR name): biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
-	# 	Email Address: administrador@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
+	# 	Email Address: pti@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
 	#
 	openssl req -new -$CRIPTOCERT -nodes -key /etc/ssl/private/tomcat9.key -out \
 	/etc/ssl/requests/tomcat9.csr -extensions v3_req -config /etc/ssl/tomcat9.conf
@@ -340,7 +340,7 @@ echo -e "Exportando o arquivo PKCS#12 PEM (Privacy Enhanced Mail) do Tomcat9, se
 	# pass: (The actual password is password)
 	# 
 	openssl pkcs12 -export -in /etc/ssl/newcerts/tomcat9.crt -inkey /etc/ssl/private/tomcat9.key \
-	-out /etc/tomcat9/tomcat9.pem -name tomcat -CAfile /etc/ssl/newcerts/biblioteca.itauna.mg.gov-ca.crt -caname root \
+	-out /etc/tomcat9/tomcat9.pem -name tomcat -CAfile /etc/ssl/newcerts/pmi01bl01-ca.crt -caname root \
 	-passout pass:$PASSPHRASE &>> $LOG
 echo -e "Arquivo PKCS#12 PEM do Tomcat9 exportando com sucesso!!!, continuando com o script...\n"
 sleep 5

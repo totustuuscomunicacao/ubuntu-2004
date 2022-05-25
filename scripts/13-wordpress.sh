@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 18/10/2021
 # Data de atualização: 09/05/2022
 # Versão: 0.16
@@ -27,10 +27,10 @@
 # Português do Brasil: Continuar;
 # Informação necessária
 #	Título do site: Bora para Prática;
-#	Nome de usuário: administrador;
+#	Nome de usuário: admin;
 #	Senha: 123456;
 #	Confirme a senha: Confirmar o uso de uma senha fraca;
-#	O seu e-mail: administrador@biblioteca.itauna.mg.gov.intra; Instalar WordPress.
+#	O seu e-mail: administrador@administrador.pti; Instalar WordPress.
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh

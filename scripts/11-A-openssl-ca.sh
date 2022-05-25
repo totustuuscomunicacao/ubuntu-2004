@@ -1,12 +1,12 @@
 #!/bin/bash
-# Autor: Jefferson Augusto
-# Site: www.totustuuscomunicacao.com.br
-# Facebook: facebook.com/totustuuscomunicacao
-# 
-# 
-# Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
-# Instagram: https://www.instagram.com/jeffersongontijo765/
-# Github: https://github.com/totustuuscomunicacao
+# Autor: Robson Vaamonde
+# Site: www.procedimentosemti.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/vaamonde
 # Data de criação: 16/10/2021
 # Data de atualização: 05/05/2022
 # Versão: 0.14
@@ -48,7 +48,7 @@
 #	Preferências ou Opções ou Configurações
 #		Pesquisar em preferências: Ver certificados
 #			Autoridades
-#				Importar: pti-ca.crt
+#				Importar: pmi01bl01-ca.crt
 #					Yes: Confiar nesta CA para identificar sites
 #					Yes: Confiar nesta autoridade certificadora para identificar usuários de email
 #					<Ver> Examinar certificado da CA
@@ -61,7 +61,7 @@
 # Instalação da Autoridade Certificadora CA no Google Chrome (GNU/Linux)
 # chrome://settings/certificates
 #	Autoridades
-#		Importar: pti-ca.crt
+#		Importar: pmi01bl01-ca.crt
 #			Yes: Confiar neste certificado para a identificação de websites.
 #			Yes: Confiar neste certificado para identificar usuários de e-mail
 #			Yes: Confiar neste certificado para a identificação de criadores de software
@@ -76,7 +76,7 @@
 # precisa do programa utilitário CertUtil para instalar o certificado no Edge
 # Mais informações acesse: https://chromium.googlesource.com/chromium/src/+/master/docs/linux/cert_management.md
 # sudo apt update && sudo apt install libnss3-tools
-#	certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n BoraParaPratica -i pti-ca.crt
+#	certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n BoraParaPratica -i pmi01bl01-ca.crt
 #	certutil -d sql:$HOME/.pki/nssdb -L
 # Abrir menu de Aplicativo
 #	Configurações
@@ -107,15 +107,15 @@
 # Instalação da Autoridade Certificadora CA no GNU/Linux (Linux Mint ou Ubuntu)
 # Pasta: Download
 #		Abrir como Root (Botão direito do Mouse: Abrir como root)
-#			Copiar: pti-ca.crt
+#			Copiar: pmi01bl01-ca.crt
 #			Para: /usr/local/share/ca-certificates/
 #		Abrir o Terminal como Root (Botão direito do Mouse: Abrir no Terminal)
 #			update-ca-certificates
-#			ls -lha /etc/ssl/certs/pti-ca.pem
+#			ls -lha /etc/ssl/certs/pmi01bl01-ca.pem
 #
 # Instalação da Autoridade Certificadora CA no Microsoft Windows (10 ou 11)
 # Pasta: Download
-#		pti-ca.crt (clicar duas vezes em cima do certificado)
+#		pmi01bl01-ca.crt (clicar duas vezes em cima do certificado)
 #			Abrir
 #				Instalar Certificado...
 #					Assistente para Importação de Certificados
@@ -357,7 +357,7 @@ echo -e "Criando o arquivo CSR (Certificate Signing Request), confirme as mensag
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
 	# 	Common Name (eg, server FQDN or YOUR name): pmi01bl01.biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
-	# 	Email Address: biblioteca@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
+	# 	Email Address: pti@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
 	#
 	openssl req -new -$CRIPTOCERT -nodes -key /etc/ssl/private/$DOMINIONETBIOS-ca.key -out \
 	/etc/ssl/requests/$DOMINIONETBIOS-ca.csr -config /etc/ssl/ca.conf
@@ -387,7 +387,7 @@ echo -e "Criando o arquivo CRT (Certificate Request Trust), confirme as mensagen
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
 	# 	Common Name (eg, server FQDN or YOUR name): biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
-	# 	Email Address: biblioteca@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
+	# 	Email Address: pti@biblioteca.itauna.mg.gov.intra <-- pressione <Enter>
 	#
 	openssl req -new -x509 -$CRIPTOCERT -days 3650 -in /etc/ssl/requests/$DOMINIONETBIOS-ca.csr -key \
 	/etc/ssl/private/$DOMINIONETBIOS-ca.key -out /etc/ssl/newcerts/$DOMINIONETBIOS-ca.crt -config /etc/ssl/ca.conf
