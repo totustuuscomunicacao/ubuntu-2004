@@ -1,0 +1,67 @@
+# Autor: Jefferson Augusto
+# Site: www.totustuuscomunicacao.com.br
+# Facebook: facebook.com/totustuuscomunicacao
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-administrador-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Data de criação: 15/10/2021
+# Data de atualização: 18/05/2022
+# Versão: 0.07
+# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64x
+# Testado e homologado para a versão do MySQL v8.0.x
+#
+# Configurações principais do Servidor de MySQL
+[mysqld]
+user      = mysql
+port      = 3306
+pid-file  = /var/run/mysqld/mysqld.pid
+socket    = /var/run/mysqld/mysqld.sock
+datadir   = /var/lib/mysql
+tmpdir    = /tmp
+#
+# Configuração utilizada pelo serviço do ZoneMinder
+sql_mode = NO_ENGINE_SUBSTITUTION
+#
+# Desativando a resolução de endereço local, permitindo acesso remoto e suportando
+# somente conexões IPv4
+bind-address         = 0.0.0.0
+#mysqlx-bind-address = 127.0.0.1
+#
+# Configurações do suporte ao OpenSSL TLS/SSL do MySQL Server
+#require_secure_transport = ON
+#ssl_ca=/etc/ssl/certs/pti-ca.pem
+#ssl_cert=/etc/ssl/newcerts/mysql.crt
+#ssl_key=/etc/ssl/private/mysql.key
+#
+# Configurações de desempenho do MySQL, aumentar o tamanho do Buffer e Packet
+key_buffer_size        = 256M
+max_allowed_packet     = 16M
+thread_stack           = 192K
+thread_cache_size      = 8
+myisam-recover-options = BACKUP
+# max_connections      = 151
+# table_open_cache     = 4000
+#
+# Configuração do Arquivo de Log Geral do MySQL Server
+general-log          = 1
+general_log_file     = /var/log/mysql/mysql-general.log
+#
+# Configuração do Arquivo de Log de Erros do MySQL Server
+log_error            = /var/log/mysql/mysql-error.log
+#
+# Configuração do Arquivo de Log das Consultas Lentas do MySQL Server
+slow_query_log       = 1
+slow_query_log_file  = /var/log/mysql/mysql-slow.log
+#
+# Configuração do Arquivo de Log do Binário do MySQL Server
+log_bin              = /var/log/mysql/mysql-bin.log
+max_binlog_size      = 100M
+#
+# Configurações avançadas do Log do Mysql Server (padrão desativadas)
+# long_query_time            = 2
+# server-id                  = 1
+# binlog_do_db               = include_database_name
+# binlog_ignore_db           = include_database_name
+# binlog_expire_logs_seconds = 2592000
+# log-queries-not-using-indexes

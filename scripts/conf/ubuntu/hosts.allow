@@ -1,0 +1,77 @@
+# Autor: Jefferson Augusto
+# Site: www.totustuuscomunicacao.com.br
+# Facebook: facebook.com/totustuuscomunicacao
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-administrador-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Data de criação: 11/10/2021
+# Data de atualização: 05/04/2022
+# Versão: 0.07
+# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
+#
+# Comando utilizado para verificar se o serviço (daemon) de rede tem suporte ao 
+# TCPWrappers: ldd /usr/sbin/sshd | grep libwrap (Biblioteca LibWrap)
+#
+# Logando todas as informações de acesso nos arquivos de Log's de cada serviço
+# em: /var/log/tcpwrappers-allow-*.log (* nome do serviço)
+#
+# Verificando as conexões dos serviços de rede com base no número da porta remota:
+# opções do comando netstat: -a (all), -n (numeric)
+# netstat -an | grep PORTA_REMOTA
+#
+# Verificando o número do processo local das conexões dos serviços de rede:
+# opções do comando ps: (all process), -u (show username and start time), -x (show daemon process)
+# ps -aux | grep PROCESSO_LOCAL
+#
+#=================== CONFIGURAÇÃO DA LIBERAÇÃO DOS DAEMON ===================
+#
+# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de OpenSSH
+# DAEMON   CLIENT     OPTION
+sshd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
+#
+# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de MySQL
+# DAEMON   CLIENT     OPTION
+mysqld: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-mysql.log
+#
+# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de Telnet
+# DAEMON   CLIENT     OPTION
+in.telnetd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-telnet.log
+#
+# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de FTP
+# DAEMON   CLIENT     OPTION
+vsftpd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-vsftpd.log
+#
+# Permitindo a Rede 191.168.200.0/22 se conectar remotamente no Servidor de TFTP
+# DAEMON   CLIENT     OPTION
+in.tftpd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-tftpd.log
+#
+# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de NFS
+# DAEMON   CLIENT     OPTION
+rpc.idmapd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rpc.mountd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rpcbind: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+portmap: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+lockd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rquotad: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+mountd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+statd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+#
+# Permitindo que todas as redes acesse os serviços remotos do Servidor Bacula
+# DAEMON   CLIENT     OPTION
+bacula-fd: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-bacula.log
+bacula-sd: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-bacula.log
+bacula-dir: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-bacula.log
+pmi01bl01.biblioteca.itauna.mg.gov.intra-fd: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-bacula.log
+pmi01bl01.biblioteca.itauna.mg.gov.intra-mon: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-bacula.log
+pmi01bl01.biblioteca.itauna.mg.gov.intra-dir: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-bacula.log
+#
+# =================== Exemplos de configuração do TCPWrappers do arquivo hosts.allow: ===================
+#
+# Permitindo uma Subrede ou nome de domínio FQDN
+# DAEMON   CLIENT     OPTION
+#sshd: 192.168.1. : spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+#sshd: 192.168.1.0/255.255.255.0: spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+#sshd: 192.168.1.0/22: spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+#sshd: *.biblioteca.itauna.mg.gov.intra: spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log
+#sshd: 192.168.1. EXCEPT 192.168.1.11: spawn /bin/echo "$(date) Conexão Liberada - SSH - IP %a" >> /var/log/tcpwrappers-allow-ssh.log

@@ -1,0 +1,45 @@
+# Autor: Jefferson Augusto
+# Site: www.totustuuscomunicacao.com.br
+# Facebook: facebook.com/totustuuscomunicacao
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-administrador-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Data de criação: 03/04/2022
+# Data de atualização: 05/04/2022
+# Versão: 0.02
+# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
+# Testado e homologado para a versão do NFS Server v4.x
+#
+# Defina como um valor numérico específico para identificar o número de instâncias do 
+# daemon NFS que você deseja iniciar. O valor padrão, 8, geralmente é suficiente, 
+# embora você queira aumentar esse valor se o servidor NFS estiver servindo arquivos 
+# para um grande número de clientes.
+RPCNFSDCOUNT="8 -V 2"
+#
+# Defina como um valor numérico específico para iniciar o daemon NFS em uma prioridade 
+# específica. Os valores numéricos para os quais você pode definir esta opção são os 
+# mesmos usados pelo comando nice . O valor padrão, 0, geralmente é suficiente, embora 
+# você possa querer aumentar esse valor se seu servidor NFS estiver servindo arquivos 
+# para um grande número de clientes e você quiser garantir que ele seja executado em uma 
+# prioridade mais alta do que outros processos no servidor.
+RPCNFSDPRIORITY=0
+#
+# Permite passar argumentos para o daemon rpc.mountd quando ele é iniciado. As mais comuns 
+# são as opções -p listen-port e -o send-port, que você pode usar para definir portas 
+# específicas para o daemon de montagem NFS escutar e enviar. Isso pode ser útil se você 
+# estiver usando um firewall baseado em porta ou se desejar usar portas diferentes dos padrões 
+# como medida de segurança. A menos que seja esse o caso, você normalmente não deve fornecer 
+# um valor para essa opção.
+RPCMOUNTDOPTS="--manage-gids"
+#
+# Defina como não para garantir que o daemon rpc.svcgssd, necessário para o suporte à autenticação 
+# Kerberos, não seja iniciado. Se você estiver usando a autenticação Kerberos com NFS, deverá 
+# definir isso como yes para garantir que esse daemon seja iniciado.
+NEED_SVCGSSD=""
+#
+# permite passar argumentos para o daemon rpc.svcgssd quando ele é iniciado. A maioria das opções 
+# para este daemon altera a localização ou detalhamento de sua saída, que você só desejará alterar 
+# se estiver tendo problemas de autenticação e desejar informações adicionais sobre o que está 
+# fazendo internamente. Você raramente precisará fornecer um valor para essa opção.
+RPCSVCGSSDOPTS=""

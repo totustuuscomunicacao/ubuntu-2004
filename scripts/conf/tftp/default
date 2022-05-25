@@ -1,0 +1,30 @@
+# Autor: Jefferson Augusto
+# Site: www.totustuuscomunicacao.com.br
+# Facebook: facebook.com/totustuuscomunicacao
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-administrador-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Github: https://github.com/totustuuscomunicacao
+# Data de criação: 31/03/2022
+# Data de atualização: 31/03/2022
+# Versão: 0.01
+# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
+# Testado e homologado para a versão do TFTP-HPA v5.2.x e PXE Syslinux v
+#
+# Configuração padrão do Boot Menu
+default vesamenu.c32
+prompt 0
+timeout 600
+#
+# Configuração da inicialização do Puppy Linux
+label puppy
+  menu label ^Live-CD do Puppy Linux via PXE
+  #kernel puppy/vmlinuz
+  #append initrd=puppy/initrd.gz
+#
+# Configuração da inicialização o Mentest86
+label memtest86
+  menu label ^Teste de Memoria RAM via PXE
+  kernel memtest
+  append -

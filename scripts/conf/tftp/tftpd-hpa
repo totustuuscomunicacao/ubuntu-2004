@@ -1,0 +1,27 @@
+# Autor: Jefferson Augusto
+# Site: www.totustuuscomunicacao.com.br
+# Facebook: facebook.com/totustuuscomunicacao
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Linkedin: https://www.linkedin.com/in/robson-administrador-0b029028/
+# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+# Data de criação: 10/10/2021
+# Data de atualização: 05/04/2022
+# Versão: 0.03
+# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
+# Testado e homologado para a versão do TFTP-HPA v5.2.x
+#
+# Configuração do usuário de serviço do Servidor TFTP-HPA
+TFTP_USERNAME="tftp"
+#
+# Localização do diretório dos arquivos do Servidor TFTP-HPA
+TFTP_DIRECTORY="/var/lib/tftpboot"
+#
+# Configuração da porta padrão do serviço do Servidor TFTP-HPA
+#TFTP_ADDRESS=":69"
+TFTP_ADDRESS="191.168.200.33:69"
+#
+# Configuração das opções de segurança do Servidor TFTP-HPA
+# opções: -4 (ipv4 only), -l (listen), -c (create), -s (secure), -v (verbose), 
+# -r (refuse), blksize (RFC 2348)
+TFTP_OPTIONS="--ipv4 --listen --create --secure --verbose --refuse blksize"

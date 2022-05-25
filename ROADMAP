@@ -1,0 +1,165 @@
+Autor: Robson Vaamonde
+Site: www.procedimentosemti.com.br
+Facebook: facebook.com/ProcedimentosEmTI
+Facebook: facebook.com/BoraParaPratica
+YouTube: youtube.com/BoraParaPratica
+Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+Github: https://github.com/vaamonde
+Data de criação: 13/01/2022
+Data de atualização: 13/05/2022
+Versão: 0.12
+Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
+
+#= Roadmap do Curso de GNU/Linux Ubuntu Server 20.04.x LTS DevOps utilizando Shell Script =#
+
+#01_ Apresentação do Curso de Ubuntu Server 20.04.x LTS DevOps Shell Script (24/01/2022)
+#02_ Conhecendo o Cenário e Topologia do Curso de Ubuntu Server 20.04.x LTS (26/01/2022)
+#03_ Básico de Git, Github, Vim, VSCode, Bash e Shell Script (28/01/2022)
+#04_ Conhecendo a Estrutura do Repositório Ubuntu-2004 no Github (31/01/2022)
+#05_ Conhecendo o arquivo HELP do Curso de Ubuntu Server 20.04.x LTS (02/02/2022)
+#06_ Conhecendo o arquivo BUGS do Curso de Ubuntu Server 20.04.x LTS (04/02/2022)
+#07_ Conhecendo o arquivo CHANGELOG do Curso de Ubuntu Server 20.04.x LTS (07/02/2022)
+#08_ Conhecendo o arquivo LICENSE do Curso de Ubuntu Server 20.04.x LTS (09/02/2022)
+#09_ Conhecendo o arquivo NEWS do Curso de Ubuntu Server 20.04.x LTS (11/02/2022)
+#10_ Conhecendo o arquivo RELEASE do Curso de Ubuntu Server 20.04.x LTS (14/02/2022)
+#11_ Conhecendo o arquivo PORTS do Curso de Ubuntu Server 20.04.x LTS (16/02/2022)
+#12_ Conhecendo o arquivo FAQ do Curso de Ubuntu Server 20.04.x LTS (18/02/2022)
+_
+#13_ Como utilizar o VSCODE para Customizar os Scripts antes de executar no seu Servidor Ubuntu (21/02/2022)
+_
+#14_ Instalação e Configuração do Ubuntu Server 20.04.x LTS Focal Fossa (23/02/2022)
+#15_ Configurações Básicas do Ubuntu Server 20.04.x LTS Focal Fossa (25/02/2022)
+_ 
+#16A_ 01-openssh.sh Customizando o Script e Arquivos de Configuração do OpenSSH Server - PARTE-01 (07/03/2022)
+#16B_ 01-openssh.sh Instalação e Configuração do OpenSSH Server - PARTE-02 (09/03/2022)
+#16C_ 01-openssh.sh Configuração e Monitoramento do OpenSSH Client no Windows e Linux - PARTE-03 (11/03/2022)
+_
+#17A_ 02-dhcp.sh Customizando o Script e Arquivos de Configuração do ISC DHCP Server - PARTE-01 (14/02/2022)
+#17B_ 02-dhcp.sh Instalação e Configuração do ISC DHCP Server - PARTE-02 (16/02/2022)
+#17C_ 02-dhcp.sh Configuração e Monitoramento do DHCP Client no Windows e Linux - PARTE-03 (18/02/2022)
+_ 
+#18A_ 03-dns.sh Customizando o Script e Arquivos de Configuração do Bind9 DNS Server - PARTE-01 (21/03/2022)
+#18B_ 03-dns.sh Instalação e Configuração do Bind9 DNS Server - PARTE-02 (23/03/2022)
+#18C_ 03-dns.sh Testes de Resoluções de Nomes do DNS Client no Windows e Linux - PARTE-03 (25/03/2022)
+_
+#19A_ 04-dhcpdns.sh Customizando o Script e Arquivos de Configuração do DHCP e DNS Server - PARTE-01 (28/03/2022)
+#19B_ 04-dhcpdns.sh Integração e Configuração do DHCP e DNS Server - PARTE-02 (30/03/2022)
+#19C_ 04-dhcpdns.sh Testes de Integração do DHCP e DNS Client no Windows e Linux - PARTE-03 (01/04/2022)
+_
+#20A_ 05-ntp.sh Customizando o Script e Arquivos de Configuração do NTP Server - PARTE-01 (04/04/2022)
+#20B_ 05-ntp.sh Instalação e Configuração do NTP Server - PARTE-02 (06/04/2022)
+#20C_ 05-ntp.sh Configuração e Monitoramento do NTP Client no Windows e Linux - PARTE-03 (08/04/2022)
+_
+#21A_ 06-tftphpa.sh Customizando o Script e Arquivos de Configuração do TFTP-HPA Server - PARTE-01 (11/04/2022)
+#21B_ 06-tftphpa.sh Instalação e Configuração do TFTP-HPA Server - PARTE-02 (13/04/2022)
+#21C_ 06-tftphpa.sh Configuração e Monitoramento do TFTP Client no Windows e Linux - PARTE-03 (15/04/2022)
+_
+#22A_ 07-nfs.sh Customizando o Script e Arquivos de Configuração do NFS Server - PARTE-01 (18/04/2022)
+#22B_ 07-nfs.sh Instalação e Configuração do NFS Server - PARTE-02 (20/04/2022)
+#22C_ 07-nfs.sh Configuração e Monitoramento do NFS Client no Windows e Linux - PARTE-03 (22/04/2022)
+_
+#23A_ 08-lamp.sh Customizando o Script e Arquivos de Configuração do LAMP Server - PARTE-01 (25/04/2022)
+#23B_ 08-lamp.sh Instalação e Configuração do LAMP Server - PARTE-02 (27/04/2022)
+#23C_ 08-lamp.sh Testes de Acesso e Monitoramento do LAMP Server no Windows e Linux - PARTE-03 (29/04/2022)
+_
+#24A_ 09-vsftpd.sh Customizando o Script e Arquivos de Configuração do VSFTPd Server - PARTE-01 (02/05/2022)
+#24B_ 09-vsftpd.sh Instalação e Configuração do VSFTPd Server - PARTE-02 (04/05/2022)
+#24C_ 09-vsftpd.sh Configuração e Monitoramento do FTP Client no Windows e Linux - PARTE-03 (06/05/2022)
+_
+#25A_ 10-tomcat.sh Customizando o Script e Arquivos de Configuração do Apache Tomcat Server - PARTE-01 (09/05/2022)
+#25B_ 10-tomcat.sh Instalação e Configuração do Apache Tomcat Server - PARTE-02 (11/05/2022)
+#25C_ 10-tomcat.sh Testes de acesso ao Apache Tomcat no Windows e Linux - PARTE-03 (13/05/2022)
+_
+#26A1_ 11-A-openssl-ca.sh Customizando o Script e Arquivos de Configuração do OpenSSL CA - PARTE-01 (16/05/2022)
+#26A2_ 11-A-openssl-ca.sh Criação e Configuração da Estrutura do OpenSSL CA - PARTE-02 (18/05/2022)
+#26A3_ 11-A-openssl-ca.sh Instalação e Configuração da CA no Windows e Linux - PARTE-03 (20/05/2022)
+#26B_ 11-B-openssl-apache.sh Geração do Certificado Assinado TLS/SSL do Apache2 Server - PARTE-01 (23/05/2022)
+#26C_ 11-C-openssl-vsftpd.sh Geração do Certificado Assinado TLS/SSL do VSFTPd Server - PARTE-01 (25/05/2022)
+#26D_ 11-D-openssl-tomcat.sh Geração do Certificado Assinado TLS/SSL do Tomcat Server - PARTE-01 (27/05/2022)
+#26E_ 11-E-openssl-mysql.sh Geração do Certificado Assinado TLS/SSL do MySQL Server - PARTE-01 (30/05/2022)
+_
+#27A_ 12-webdav.sh Customizando o Script e Arquivos de Configuração do WebDav - PARTE-01 (06/06/2022)
+#27B_ 12-webdav.sh Configuração do WebDav no Apache2 Server - PARTE-02 (08/06/2022)
+#27C_ 12-webdav.sh Testes de Acesso e Monitoramento do WebDav Client no Windows e Linux - PARTE-03 (10/06/2022)
+_
+#26A_ 11-wordpress.sh Customizando o Script e Arquivos de Configuração do CMS Wordpress - PARTE-01
+#26B_ 11-wordpress.sh Instalação e Configuração do CMS Wordpress - PARTE-02
+#26C_ 11-wordpress.sh Instalação e Configuração do Plugins do Wordpress - PARTE-03
+_
+#27A_ 12-webmin.sh Customizando o Script e Arquivos de Configuração do Webmin e Usermin - PARTE-01
+#27B_ 12-webmin.sh Instalação e Configuração do Webmin e Usermin - PARTE-02
+#27C_ 12-webmin.sh Utilização Básica do Webmin e Usermin - PARTE-03
+_
+#28A_ 13-netdata.sh Customizando o Script e Arquivos de Configuração do Netdata - PARTE-01
+#28B_ 13-netdata.sh Instalação e Configuração do Netdata - PARTE-02
+#28C_ 13-netdata.sh Monitoramento dos Recursos do Netdata - PARTE-03
+_
+#29A_ 14-loganalyzer.sh Customizando o Script e Arquivos de Configuração do LogAnalyzer - PARTE-01
+#29B_ 14-loganalyzer.sh Instalação e Configuração do LogAnalyzer - PARTE-02
+#29C_ 14-loganalyzer.sh Monitoramento dos Logs no LogAnalyzer - PARTE-03
+_
+#30A_ 15-glpi.sh Customizando o Script e Arquivos de Configuração do GLPI Help Desk - PARTE-01
+#30B_ 15-glpi.sh Instalação e Configuração do GLPI Help Desk - PARTE-02
+#30C_ 15-glpi.sh Utilização e Criação de Chamados no GLPI Help Desk - PARTE-03
+_
+#31A_ 16-fusioninventory.sh Customizando o Script e Arquivos de Configuração do FusionInventory - PARTE-01
+#31B_ 16-fusioninventory.sh Instalação e Configuração do FusionInventory - PARTE-02
+#31C_ 16-fusioninventory.sh Inventário no Windows e Linux do FusionInventory Agent - PARTE-03
+_
+#32A_ 17-zoneminder.sh Customizando o Script e Arquivos de Configuração do ZoneMinder - PARTE-01
+#32B_ 17-zoneminder.sh Instalação e Configuração do ZoneMinder - PARTE-02
+#32C_ 17-zoneminder.sh Configuração de Câmeras IP no ZoneMinder - PARTE-03
+_
+#33A_ 18-guacamole.sh Customizando o Script e Arquivos de Configuração do Apache Guacamole - PARTE-01
+#33B_ 18-guacamole.sh Instalação e Configuração do Apache Guacamole - PARTE-02
+#33C_ 18-guacamole.sh Acesso Remoto ao Servidor e Clientes no Guacamole - PARTE-03
+_
+#34A_ 19-grafana.sh Customizando o Script e Arquivos de Configuração do Grafana - PARTE-01
+#34B_ 19-grafana.sh Instalação e Configuração do Grafana - PARTE-02
+#34C_ 19-grafana.sh Criando Dashboard no Grafana com Prometheus - PARTE-03
+_
+#35A_ 20-zabbix.sh Customizando o Script e Arquivos de Configuração do Zabbix - PARTE-01
+#35B_ 20-zabbix.sh Instalação e Configuração do Zabbix - PARTE-02
+#35C_ 20-zabbix.sh Configuração e Monitoramento do Zabbix Agent - PARTE-03
+_
+#36A_ 21-docker.sh Customizando o Script e Arquivos de Configuração do Docker - PARTE-01
+#36B_ 21-docker.sh Instalação e Configuração do Docker - PARTE-02
+#36C_ 21-docker.sh Criando Container no Docker e Portainer - PARTE-03
+_
+#37A_ 22-ansible.sh Customizando o Script e Arquivos de Configuração do Ansible - PARTE-01
+#37B_ 22-ansible.sh Instalação e Configuração do Ansible - PARTE-02
+#37C_ 22-ansible.sh Criando um Playbook simples com o Ansible - PARTE-03
+_
+#38A_ 23-ntopng.sh Customizando o Script e Arquivos de Configuração do NTop-NG - PARTE-01
+#38B_ 23-ntopng.sh Instalação e Configuração do NTop-NG - PARTE-02
+_
+#39A_ 24-openfire.sh Customizando o Script e Arquivos de Configuração do OpenFire - PARTE-01
+#39B_ 24-openfire.sh Instalação e Configuração do OpenFire - PARTE-02
+#39C_ 24-openfire.sh Instalação do OpenFire Client no Windows e Linux - PARTE-03
+_
+#40A_ 25-owncloud.sh Customizando o Script e Arquivos de Configuração do ownCloud - PARTE-01
+#40B_ 25-owncloud.sh Instalação e Configuração do ownCloud - PARTE-02
+#40C_ 25-owncloud.sh Instalação do ownCloud Client no Windows e Linux - PARTE-03
+_
+#41A_ 26-ocsinventory.sh Customizando o Script e Arquivos de Configuração do OCS Inventory - PARTE-01
+#41B_ 26-ocsinventory.sh Instalação e Configuração do OCS Inventory - PARTE-02
+#41C_ 26-ocsinventory.sh Inventário no Windows e Linux do OCS Inventory - PARTE-03
+_
+#42A_ 27-bacula.sh Customizando o Script e Arquivos de Configuração do Bacula - PARTE-01
+#42B_ 27-bacula.sh Instalação e Configuração do Bacula - PARTE-02
+#42C_ 27-bacula.sh Configurando um Job de Backup no Bacula - PARTE-03
+_
+#43A_ 28-graylog.sh Customizando o Script e Arquivos de Configuração do Graylog - PARTE-01
+#43B_ 28-graylog.sh Instalação e Configuração do Graylog - PARTE-02
+_
+#44A_ 29-postgresql.sh Customizando o Script e Arquivos de Configuração do PostgreSQL - PARTE-01
+#44B_ 29-postgresql.sh Instalação e Configuração do PostgreSQL - PARTE-02
+_
+#47A_ 32-nextcloud.sh Customizando o Script e Arquivos de Configuração do NextCloud - PARTE-01
+#47B_ 32-nextcloud.sh Instalação e Configuração do NextCloud - PARTE-02
+#47C_ 25-nextcloud.sh Configuração e Monitoramento do NextCloud Client no Windows e Linux - PARTE-03
+_
+#48A_ 33-asterisk.sh Customizando o Script e Arquivos de Configuração do Asterisk - PARTE-01
+#48B_ 33-asterisk.sh Instalação e Configuração do Asterisk - PARTE-02
+#48C_ 33-asterisk.sh Configuração do Software Phone no Windows e Linux - PARTE-03

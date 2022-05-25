@@ -1,0 +1,103 @@
+Autor: Robson Vaamonde
+Site: www.procedimentosemti.com.br
+Facebook: facebook.com/ProcedimentosEmTI
+Facebook: facebook.com/BoraParaPratica
+YouTube: youtube.com/BoraParaPratica
+Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+Github: https://github.com/vaamonde
+Data de criação: 10/10/2021
+Data de atualização: 14/05/2022
+Versão: 0.19
+Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
+
+============================================= CRIAÇÃO DE NOVOS SCRIPTS =============================================
+14/05/2022 - Robson Vaamonde - Migração dos script pendentes da versão 18.04.x para a versão 20.04.x: 35-openproject.sh
+
+08/05/2022 - Robson Vaamonde - Criação do Bloco de Validação para Bloquear o uso das Teclas: Ctrl+C e Ctrl+Z na hora
+de executar os scripts, esse recurso irá permitir que quando você está rodando o script não pare o mesmo quando você
+pressionar as teclas para abortar o processo. Bloco do script abaixo para testar:
+Link de estudo: https://www.digitalocean.com/community/questions/how-to-prevent-a-user-from-using-ctrl-c-or-ctrl-z-to-stop-a-script
+Link de estudo: https://www.thegeekdiary.com/how-to-disable-ctrlc-or-ctrlz-using-the-trap-command-in-linux/
+2=SIGINT, 15=SIGTERM, 20=SIGTSTP (command: trap -l)
+DISABLETRAP=$(trap ' ' 2 15 20)
+ENABLETRAP=$(trap - 2 15 20)
+
+03/04/2022 - Robson Vaamonde - Estudos e criação do script: 00-phpipam.sh. O PhpIpam IPAM (*IP Address management*) 
+é uma aplicação WEB **open source**, no qual gerencia suas redes, ip’s, Vlans, checagem de host, divisão por sub-redes, 
+suporte IPV6… etc.
+
+18/03/2022 - Robson Vaamonde - Indicação do inscrito no Canal do YouTUBE: Patrick Scalco: - Estudos e criação do
+script: 00-bigbluebutton.sh. BigBlueButton é um sistema de web-conferência de código aberto projetado para aprendizado 
+online. BigBlueButton é uma ferramenta usada por instrutores, que os ajuda a acessar os Sistemas de Gerenciamento de 
+Aprendizagem, ferramentas de engajamento e análises.
+
+23/02/2022 - Robson Vaamonde - Estudos e criação do script: 00-passbolt.sh. Passbolt é um gerenciador de senhas de 
+código aberto projetado para colaboração em equipe. Projeto conhecido no LinkedIn no perfil do: Wendel Guaralde
+Mais informações: https://help.passbolt.com/hosting/install/ce/ubuntu/ubuntu
+
+14/02/2022 - Robson Vaamonde - Estudos e criação do script: 00-metabase.sh. Metabase é uma ferramenta de business 
+intelligence gratuita e de código aberto que pode ser usada para pesquisar conjuntos de dados e exibir informações.
+
+03/02/2022 - Robson Vaamonde - Estudos para colocar os recursos do Prometheus e do InfluxDB no script do Grafana, 
+verificando a possibilidade de integrar o Guacamole Server para utilizar o Banco de Dados do MySQL.
+
+15/01/2022 - Robson Vaamonde - Novas soluções de TI para o Curso de Ubuntu Server 20.04.x LTS, criação dos scripts e
+arquivos de configuração (criado: feito e publicado | dev: em desenvolvimento):
+	_ 00-webdav.sh (criado): extensão do protocolo HTTP para transferência de arquivos;
+	_ 00-nfs.sh (criado): protocolo de compartilhamento de arquivos em rede linux;
+	_ 00-nextcloud.sh (criado): plataforma de colaboração em nuvem de código aberto;
+	_ 00-samba4.sh (dev): protocolo de compartilhamento de arquivos em rede linux, microsoft ou macos;
+	_ 00-postfix.sh (dev): agente de transferência de e-mails livre e de código aberto;
+	_ 00-netbox.sh (dev): ferramenta de modelagem de recursos de infraestrutura;
+	_ 00-gitlab.sh (dev): gerenciador de repositório de software baseado em git;
+	_ 00-redmine.sh (dev):  gerenciador de projetos baseados na web e ferramenta de gerenciamento de bugs;
+	_ 00-motioneye.sh (dev): software de CFTV de software livre desenvolvido para Linux;
+	_ 00-shinobi.sh (dev): software de CCTV de código aberto escrito em Node.JS;
+	_ 00-netdisco.sh (dev): ferramenta de gerenciamento de rede adequada para redes pequenas a muito grandes;
+	_ 00-thinstation.sh (dev): implementação Linux gratuita e de código aberto de um sistema operacional thin client;
+	_ 00-bastillion.sh (dev): console SSH baseado na web que gerencia o acesso administrativo aos sistemas;
+	_ 00-jenkins.sh (dev): servidor de automação de código aberto;
+	_ 00-awx.sh (dev): oferece software para gerenciar projetos Ansible;
+	_ 00-owa.sh (dev): software para rastrear e analisar o acesso a websites;
+	_ 00-glpi10.sh (dev): software de Help Desk Open Source (nova versão 10);
+	_ 00-zabbix6.sh (dev): software de monitoramento e gerenciamento de (nova versão 6.0);
+	_ 00-hestia.sh (dev): sistemas de gerenciamento de servidores Web;
+	_ 00-aapanel.sh (dev): sistemas de gerenciamento de servidores Web;
+	_ 00-tinycp.sh (dev): sistemas de gerenciamento de servidores Web;
+	_ 00-moodle.sh (dev): um software livre, de apoio à aprendizagem, executado num ambiente virtual;
+	_ 00-mkdocs.sh (dev): é um gerador de site estático rápido voltado para a construção de documentação.
+
+26/11/2021 - Robson Vaamonde - Ideias para a criação dos novos scripts de configuração: 
+	00-webdav.sh, 
+	00-nfs.sh, 
+	00-nextcloud.sh,
+	00-samba4.sh, 
+	00-postfix.sh, 
+	00-netbox.sh, 
+	00-gitlab.sh, 
+	00-redmine.sh, 
+	00-shinobi.sh, 
+	00-netdisco.sh, 
+	00-thinstation.sh
+	00-iscsi.sh,
+	00-dnsslave.sh,
+	00-onlyoffice.sh, 
+	00-wpad.sh, 
+	00-freeradius.sh, 
+	00-facilemanager.sh, 
+	00-dhcpglass.sh, 
+	00-openvpn.sh,  
+	00-pam.sh, 
+	00-ldap.sh, 
+	00-mrtg.sh.
+
+13/10/2021 - Robson Vaamonde - Remoção dos recursos de: Syslinux, Syslinux Utils, Syslinux EFI, PXE Linux e do Puppy
+Linux do script: 06-tfthpa.sh deixando mais simples, a implementação do PXE Linux será feita utilizando o ThinStation.
+
+12/10/2021 - Robson Vaamonde - Separação dos scripts dos serviços de ICS DHCP Server, Bind DNS Server e integração
+dos serviços para facilitar a implementação: 02-dhcp.sh, 03-dns.sh e 04-dhcpdns.sh.
+
+10/10/2021 - Robson Vaamonde - Criação do arquivo: 00-parametros.sh para facilitar a configuração e instalação dos 
+serviços de rede em cenários diferentes, todas as variáveis ficaram centralizadas no arquivo 00-parametros.sh e os
+arquivos de configuração devem ser customizados a parte.
