@@ -6,7 +6,7 @@ Facebook Procedimentos em TI: https://www.facebook.com/totustuuscomunicacao<br>
 Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica<br>
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
-LinkedIn Jefferson Augusto: https://www.linkedin.com/in/robson-administrador-0b029028/<br>
+LinkedIn Jefferson Augusto: https://www.linkedin.com/in/jefferson-augusto-5759b87b/<br>
 Github Procedimentos em TI: https://github.com/totustuuscomunicacao<br>
 Data de criação: 10/10/2021<br>
 Data de atualização: 02/03/2022<br>

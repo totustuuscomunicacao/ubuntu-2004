@@ -7,7 +7,7 @@
 # Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
 # Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 # YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
-# LinkedIn Jefferson Augusto: https://www.linkedin.com/in/robson-administrador-0b029028/
+# LinkedIn Jefferson Augusto: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
 # Github: https://github.com/totustuuscomunicacao
 # Data de criação: 23/07/2021
 # Data de atualização: 26/11/2021

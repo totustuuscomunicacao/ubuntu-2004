@@ -1,20 +1,20 @@
-Autor: Robson Vaamonde
-Site: www.procedimentosemti.com.br
-Facebook: facebook.com/ProcedimentosEmTI
-Facebook: facebook.com/BoraParaPratica
-YouTube: youtube.com/BoraParaPratica
-Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
-Github: https://github.com/vaamonde
+Autor: Jefferson Augusto
+Site: www.totustuuscomunicacao.com.br
+Facebook: facebook.com/totustuuscomunicacao
+
+
+Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
+Instagram: https://www.instagram.com/jeffersongontijo765/
+Github: https://github.com/totustuuscomunicacao/
 Data de criação: 10/10/2021
 Data de atualização: 14/05/2022
 Versão: 0.19
 Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
 
 ============================================= CRIAÇÃO DE NOVOS SCRIPTS =============================================
-14/05/2022 - Robson Vaamonde - Migração dos script pendentes da versão 18.04.x para a versão 20.04.x: 35-openproject.sh
+14/05/2022 - Jefferson Augusto - Migração dos script pendentes da versão 18.04.x para a versão 20.04.x: 35-openproject.sh
 
-08/05/2022 - Robson Vaamonde - Criação do Bloco de Validação para Bloquear o uso das Teclas: Ctrl+C e Ctrl+Z na hora
+08/05/2022 - Jefferson Augusto - Criação do Bloco de Validação para Bloquear o uso das Teclas: Ctrl+C e Ctrl+Z na hora
 de executar os scripts, esse recurso irá permitir que quando você está rodando o script não pare o mesmo quando você
 pressionar as teclas para abortar o processo. Bloco do script abaixo para testar:
 Link de estudo: https://www.digitalocean.com/community/questions/how-to-prevent-a-user-from-using-ctrl-c-or-ctrl-z-to-stop-a-script
@@ -23,26 +23,26 @@ Link de estudo: https://www.thegeekdiary.com/how-to-disable-ctrlc-or-ctrlz-using
 DISABLETRAP=$(trap ' ' 2 15 20)
 ENABLETRAP=$(trap - 2 15 20)
 
-03/04/2022 - Robson Vaamonde - Estudos e criação do script: 00-phpipam.sh. O PhpIpam IPAM (*IP Address management*) 
+03/04/2022 - Jefferson Augusto - Estudos e criação do script: 00-phpipam.sh. O PhpIpam IPAM (*IP Address management*) 
 é uma aplicação WEB **open source**, no qual gerencia suas redes, ip’s, Vlans, checagem de host, divisão por sub-redes, 
 suporte IPV6… etc.
 
-18/03/2022 - Robson Vaamonde - Indicação do inscrito no Canal do YouTUBE: Patrick Scalco: - Estudos e criação do
+18/03/2022 - Jefferson Augusto - Indicação do inscrito no Canal do YouTUBE: Patrick Scalco: - Estudos e criação do
 script: 00-bigbluebutton.sh. BigBlueButton é um sistema de web-conferência de código aberto projetado para aprendizado 
 online. BigBlueButton é uma ferramenta usada por instrutores, que os ajuda a acessar os Sistemas de Gerenciamento de 
 Aprendizagem, ferramentas de engajamento e análises.
 
-23/02/2022 - Robson Vaamonde - Estudos e criação do script: 00-passbolt.sh. Passbolt é um gerenciador de senhas de 
+23/02/2022 - Jefferson Augusto - Estudos e criação do script: 00-passbolt.sh. Passbolt é um gerenciador de senhas de 
 código aberto projetado para colaboração em equipe. Projeto conhecido no LinkedIn no perfil do: Wendel Guaralde
 Mais informações: https://help.passbolt.com/hosting/install/ce/ubuntu/ubuntu
 
-14/02/2022 - Robson Vaamonde - Estudos e criação do script: 00-metabase.sh. Metabase é uma ferramenta de business 
+14/02/2022 - Jefferson Augusto - Estudos e criação do script: 00-metabase.sh. Metabase é uma ferramenta de business 
 intelligence gratuita e de código aberto que pode ser usada para pesquisar conjuntos de dados e exibir informações.
 
-03/02/2022 - Robson Vaamonde - Estudos para colocar os recursos do Prometheus e do InfluxDB no script do Grafana, 
+03/02/2022 - Jefferson Augusto - Estudos para colocar os recursos do Prometheus e do InfluxDB no script do Grafana, 
 verificando a possibilidade de integrar o Guacamole Server para utilizar o Banco de Dados do MySQL.
 
-15/01/2022 - Robson Vaamonde - Novas soluções de TI para o Curso de Ubuntu Server 20.04.x LTS, criação dos scripts e
+15/01/2022 - Jefferson Augusto - Novas soluções de TI para o Curso de Ubuntu Server 20.04.x LTS, criação dos scripts e
 arquivos de configuração (criado: feito e publicado | dev: em desenvolvimento):
 	_ 00-webdav.sh (criado): extensão do protocolo HTTP para transferência de arquivos;
 	_ 00-nfs.sh (criado): protocolo de compartilhamento de arquivos em rede linux;
@@ -68,7 +68,7 @@ arquivos de configuração (criado: feito e publicado | dev: em desenvolvimento)
 	_ 00-moodle.sh (dev): um software livre, de apoio à aprendizagem, executado num ambiente virtual;
 	_ 00-mkdocs.sh (dev): é um gerador de site estático rápido voltado para a construção de documentação.
 
-26/11/2021 - Robson Vaamonde - Ideias para a criação dos novos scripts de configuração: 
+26/11/2021 - Jefferson Augusto - Ideias para a criação dos novos scripts de configuração: 
 	00-webdav.sh, 
 	00-nfs.sh, 
 	00-nextcloud.sh,
@@ -92,12 +92,12 @@ arquivos de configuração (criado: feito e publicado | dev: em desenvolvimento)
 	00-ldap.sh, 
 	00-mrtg.sh.
 
-13/10/2021 - Robson Vaamonde - Remoção dos recursos de: Syslinux, Syslinux Utils, Syslinux EFI, PXE Linux e do Puppy
+13/10/2021 - Jefferson Augusto - Remoção dos recursos de: Syslinux, Syslinux Utils, Syslinux EFI, PXE Linux e do Puppy
 Linux do script: 06-tfthpa.sh deixando mais simples, a implementação do PXE Linux será feita utilizando o ThinStation.
 
-12/10/2021 - Robson Vaamonde - Separação dos scripts dos serviços de ICS DHCP Server, Bind DNS Server e integração
+12/10/2021 - Jefferson Augusto - Separação dos scripts dos serviços de ICS DHCP Server, Bind DNS Server e integração
 dos serviços para facilitar a implementação: 02-dhcp.sh, 03-dns.sh e 04-dhcpdns.sh.
 
-10/10/2021 - Robson Vaamonde - Criação do arquivo: 00-parametros.sh para facilitar a configuração e instalação dos 
+10/10/2021 - Jefferson Augusto - Criação do arquivo: 00-parametros.sh para facilitar a configuração e instalação dos 
 serviços de rede em cenários diferentes, todas as variáveis ficaram centralizadas no arquivo 00-parametros.sh e os
 arquivos de configuração devem ser customizados a parte.

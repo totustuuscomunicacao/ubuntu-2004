@@ -2,8 +2,8 @@
 # Autor: Jefferson Augusto
 # Site: www.totustuuscomunicacao.com.br
 # Facebook: facebook.com/totustuuscomunicacao
-# Facebook: facebook.com/BoraParaPratica
-# YouTube: youtube.com/BoraParaPratica
+# 
+# 
 # Data de criação: 14/01/2021
 # Data de atualização: 27/04/2021
 # Versão: 0.05

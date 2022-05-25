@@ -2,10 +2,10 @@
 // Autor: Jefferson Augusto
 // Site: www.totustuuscomunicacao.com.br
 // Facebook: facebook.com/totustuuscomunicacao
-// Facebook: facebook.com/BoraParaPratica
-// YouTube: youtube.com/BoraParaPratica
-// Linkedin: https://www.linkedin.com/in/robson-administrador-0b029028/
-// Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
+// 
+// 
+// Linkedin: https://www.linkedin.com/in/jefferson-augusto-5759b87b/
+// Instagram: https://www.instagram.com/jeffersongontijo765/
 // Data de criação: 10/12/2021
 // Data de atualização: 19/12/2021
 // Versão: 0.01
