@@ -570,7 +570,7 @@ CREATE_TABLE_JAVAEE="CREATE TABLE contatos (
 # Variáveis utilizadas na geração das chaves privadas/públicas dos certificados do OpenSSL
 #
 # Variável da senha utilizada na geração das chaves privadas/públicas da CA e dos certificados
-PASSPHRASE="pmi@2022"
+PASSPHRASE="123456"
 #
 # Variável do tipo de criptografia da chave privada com as opções de: -aes128, -aes192, -aes256, 
 # -camellia128, -camellia192, -camellia256, -des, -des3 ou -idea, padrão utilizado: -aes256
