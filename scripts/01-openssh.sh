@@ -32,11 +32,11 @@
 # Acesso remoto utilizando o GNU/Linux ou Microsoft Windows
 #
 # Linux Mint Terminal: Ctrl+Alt+T
-# 	ssh administrador@191.168.200.33
+# 	ssh administrador@192.168.1.33
 #	ssh administrador@ssh.biblioteca.itauna.mg.gov.intra
 #
 # Windows Powershell: Menu, Powershell 
-#	ssh administrador@191.168.200.33
+#	ssh administrador@192.168.1.33
 #	ssh administrador@ssh.biblioteca.itauna.mg.gov.intra
 #
 # Linux Mint ou Windows:
@@ -59,7 +59,7 @@
 #		Enter file in which to save the key (/home/administrador/.ssh/id_rsa): /home/administrador/.ssh/administrador <Enter>
 #		Enter passphrase (empty for no passphrase): <Enter>
 #		Enter same passphrase again: <Enter>
-#	ssh-copy-id administrador@191.168.200.33
+#	ssh-copy-id administrador@192.168.1.33
 #
 # Importando os pares de chaves Públicas/Privadas utilizando o Powershell
 # Windows Powershell: Menu, Powershell 

@@ -56,7 +56,7 @@ REALM="biblioteca.itauna.mg.gov.intra"
 NETBIOS="PMI"
 DOMAIN="biblioteca.itauna.mg.gov.intra"
 FQDN="pmi01bl01.biblioteca.itauna.mg.gov.intra"
-IP="191.168.200.33"
+IP="192.168.1.33"
 #
 # Variáveis de configuração do NTP Server
 NTP="a.st1.ntp.br"
@@ -69,7 +69,7 @@ PASSWORD="123456"
 LEVEL="2008_R2"
 SITE="biblioteca.itauna.mg.gov.intra"
 INTERFACE="enp0s3"
-GATEWAY="191.168.200.51"
+GATEWAY="192.168.1.1"
 #
 # Variáveis de configuração do DNS
 ARPA="200.168.191.in-addr.arpa"

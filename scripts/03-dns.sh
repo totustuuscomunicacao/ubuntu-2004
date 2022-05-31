@@ -35,7 +35,7 @@
 #
 # Windows Powershell.: 
 #	nslookup biblioteca.itauna.mg.gov.intra
-#	nslookup 191.168.200.33
+#	nslookup 192.168.1.33
 #	nslookup pmi01bl01
 #	nslookup pmi01bl01.biblioteca.itauna.mg.gov.intra
 #	ipconfig /displaydns
@@ -225,12 +225,12 @@ echo -e "Atualizando os arquivos de configuração do Bind DNS Server, aguarde..
 	mv -v /etc/bind/rndc.key /etc/bind/rndc.key.old &>> $LOG
 	mv -v /etc/default/named /etc/default/named.old &>> $LOG
 	cp -v conf/dns/{named.conf,named.conf.local,named.conf.options,named.conf.default-zones,rndc.key} /etc/bind/ &>> $LOG
-	cp -v conf/dns/{biblioteca.itauna.mg.gov.intra.hosts,191.168.200.rev} /var/lib/bind/ &>> $LOG
+	cp -v conf/dns/{biblioteca.itauna.mg.gov.intra.hosts,192.168.1.rev} /var/lib/bind/ &>> $LOG
 	cp -v conf/dns/{dnsupdate-cron,rndcupdate-cron} /etc/cron.d/ &>> $LOG
 	cp -v conf/dns/named /etc/default/ &>> $LOG
 	cp -v conf/dns/rndcstats /etc/logrotate.d/ &>> $LOG
 	chown -v root:bind /etc/bind/rndc.key &>> $LOG
-	chown -v root:bind /var/lib/bind/{biblioteca.itauna.mg.gov.intra.hosts,191.168.200.rev} &>> $LOG
+	chown -v root:bind /var/lib/bind/{biblioteca.itauna.mg.gov.intra.hosts,192.168.1.rev} &>> $LOG
 echo -e "Arquivos atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -281,13 +281,13 @@ echo -e "Editando o arquivo de configuração biblioteca.itauna.mg.gov.intra.hos
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo de configuração 191.168.200.rev, pressione <Enter> para continuar."
+echo -e "Editando o arquivo de configuração 192.168.1.rev, pressione <Enter> para continuar."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
-	vim /var/lib/bind/191.168.200.rev
-	named-checkzone $DOMAINREV /var/lib/bind/191.168.200.rev &>> $LOG
-	named-checkzone $NETWORK /var/lib/bind/191.168.200.rev &>> $LOG
+	vim /var/lib/bind/192.168.1.rev
+	named-checkzone $DOMAINREV /var/lib/bind/192.168.1.rev &>> $LOG
+	named-checkzone $NETWORK /var/lib/bind/192.168.1.rev &>> $LOG
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #

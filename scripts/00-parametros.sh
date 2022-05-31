@@ -74,7 +74,7 @@ DOMINIONETBIOS="$(echo $DOMINIOSERVER | cut -d'.' -f1)"
 FQDNSERVER="$NOMESERVER.$DOMINIOSERVER"
 #
 # Variável do Endereço IPv4 principal (padrão) do Servidor Ubuntu desse curso
-IPV4SERVER="191.168.200.33"
+IPV4SERVER="192.168.1.33"
 #
 # Variável do Nome da Interface Lógica do Servidor Ubuntu Server desse curso
 # CUIDADO!!! o nome da interface de rede pode mudar dependendo da instalação do Ubuntu Server,
@@ -170,7 +170,7 @@ PORTDHCP="67"
 # 08. /etc/bind/named.conf.default-zones = arquivo de configuração das Zonas Padrão do Bind9
 # 09. /etc/bind/rndc.key = arquivo de configuração das Chaves RNDC de integração Bind9 e DHCP
 # 10. /var/lib/bind/biblioteca.itauna.mg.gov.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
-# 11. /var/lib/bind/191.168.200.rev = arquivo de configuração da Zona de Pesquisa Reversas
+# 11. /var/lib/bind/192.168.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
 # 12. /etc/default/named = arquivo de configuração do Daemon do Serviço do Bind9
 # 13. /etc/cron.d/dnsupdate-cron = arquivo de configuração das atualizações de Ponteiros
 # 14. /etc/cron.d/rndcupdate-cron = arquivo de configuração das atualizações das Estatísticas
@@ -192,7 +192,7 @@ DOMAIN=$DOMINIOSERVER
 DOMAINREV="200.168.191.in-addr.arpa"
 #
 # Variável do endereço IPv4 da Subrede do Servidor de DNS
-NETWORK="191.168.200."
+NETWORK="192.168.1."
 #
 # Variável de instalação do serviço de rede Bind DNS Server
 DNSINSTALL="bind9 bind9utils bind9-doc dnsutils net-tools"
@@ -214,7 +214,7 @@ PORTRNDC="953"
 # Arquivos de monitoramento (log) dos Serviços de Rede Bind9 e do DHCP utilizados nesse script
 # 01. dhcp-lease-list = comando utilizado para mostrar os leases dos endereços IPv4 do ISC DHCP
 # 02. less /var/lib/bind/biblioteca.itauna.mg.gov.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
-# 03. less /var/lib/bind/191.168.200.rev = arquivo de configuração da Zona de Pesquisa Reversas
+# 03. less /var/lib/bind/192.168.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
 #
 # Declarando a variável de geração da chave de atualização dos registros do Bind DNS Server 
 # integrado no ISC DHCP Server

@@ -54,7 +54,7 @@ LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 #
 # Declarando as variáveis de configuração do Wekan
 PORT="3000"
-IP="191.168.200.33"
+IP="192.168.1.33"
 URL="http://$IP:$PORT"
 #
 # Verificando se o usuário é Root, Distribuição é >=18.04 e o Kernel é >=4.15 <IF MELHORADO)

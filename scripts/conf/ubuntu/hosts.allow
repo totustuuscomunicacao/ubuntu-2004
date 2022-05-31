@@ -26,36 +26,36 @@
 #
 #=================== CONFIGURAÇÃO DA LIBERAÇÃO DOS DAEMON ===================
 #
-# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de OpenSSH
+# Permitindo a Rede 192.168.1.0/22 se autenticar remotamente no Servidor de OpenSSH
 # DAEMON   CLIENT     OPTION
-sshd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
+sshd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
 #
-# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de MySQL
+# Permitindo a Rede 192.168.1.0/22 se autenticar remotamente no Servidor de MySQL
 # DAEMON   CLIENT     OPTION
-mysqld: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-mysql.log
+mysqld: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-mysql.log
 #
-# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de Telnet
+# Permitindo a Rede 192.168.1.0/22 se autenticar remotamente no Servidor de Telnet
 # DAEMON   CLIENT     OPTION
-in.telnetd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-telnet.log
+in.telnetd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-telnet.log
 #
-# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de FTP
+# Permitindo a Rede 192.168.1.0/22 se autenticar remotamente no Servidor de FTP
 # DAEMON   CLIENT     OPTION
-vsftpd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-vsftpd.log
+vsftpd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-vsftpd.log
 #
-# Permitindo a Rede 191.168.200.0/22 se conectar remotamente no Servidor de TFTP
+# Permitindo a Rede 192.168.1.0/22 se conectar remotamente no Servidor de TFTP
 # DAEMON   CLIENT     OPTION
-in.tftpd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-tftpd.log
+in.tftpd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-tftpd.log
 #
-# Permitindo a Rede 191.168.200.0/22 se autenticar remotamente no Servidor de NFS
+# Permitindo a Rede 192.168.1.0/22 se autenticar remotamente no Servidor de NFS
 # DAEMON   CLIENT     OPTION
-rpc.idmapd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-rpc.mountd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-rpcbind: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-portmap: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-lockd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-rquotad: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-mountd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
-statd: 191.168.200.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rpc.idmapd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rpc.mountd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rpcbind: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+portmap: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+lockd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+rquotad: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+mountd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
+statd: 192.168.1.0/22: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-nfs.log
 #
 # Permitindo que todas as redes acesse os serviços remotos do Servidor Bacula
 # DAEMON   CLIENT     OPTION

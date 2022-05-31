@@ -39,10 +39,10 @@ $TTL 3600 ; 1 hour
 @               IN 		MX		10 mail
 @               IN		TXT		"v=spf1 a mx -all"
 ;
-biblioteca.itauna.mg.gov.intra.      IN 		A 		191.168.200.33
-pmi01bl01    IN 		A		191.168.200.33
-pmi01fw01    IN 		A		191.168.200.51
-mail            IN 		A 		191.168.200.33
+biblioteca.itauna.mg.gov.intra.      IN 		A 		192.168.1.33
+pmi01bl01    IN 		A		192.168.1.33
+pmi01fw01    IN 		A		192.168.1.1
+mail            IN 		A 		192.168.1.33
 ;
 cloud           IN		CNAME	pmi01bl01
 ftp             IN		CNAME	pmi01bl01

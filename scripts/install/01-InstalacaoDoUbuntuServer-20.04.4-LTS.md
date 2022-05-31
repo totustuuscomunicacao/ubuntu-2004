@@ -112,10 +112,10 @@ Instalação do Ubuntu Server: https://ubuntu.com/server/docs/installation
 	_ 		enp0s3 eth <Enter>
 	_ 			Edit IPv4 <Enter>
 	_ 				IPv4 Method: Manual <Enter>
-	_ 					Subnet: 191.168.200.0/22 <Tab>
-	_ 					Address: 191.168.200.33 <Tab>
-	_ 					Gateway: 191.168.200.51 <Tab>
-	_ 					Name servers: 191.168.200.51 <Tab>
+	_ 					Subnet: 192.168.1.0/22 <Tab>
+	_ 					Address: 192.168.1.33 <Tab>
+	_ 					Gateway: 192.168.1.1 <Tab>
+	_ 					Name servers: 192.168.1.1 <Tab>
 	_ 					Search domains: biblioteca.itauna.mg.gov.intra
 	_ 				<Save>
 	_ 	<Done>

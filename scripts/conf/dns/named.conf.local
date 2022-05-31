@@ -37,7 +37,7 @@ zone "biblioteca.itauna.mg.gov.intra" IN {
 // Configuração da Zona de Pesquisa Reversa do Bind9 DNS Server
 zone "200.168.191.in-addr.arpa" IN {
 	type master;
-	file "/var/lib/bind/191.168.200.rev";
+	file "/var/lib/bind/192.168.1.rev";
 	allow-update { key rndc-key; };
 	allow-query { any; };
 	allow-transfer { none; };

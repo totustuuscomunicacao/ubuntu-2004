@@ -7,7 +7,7 @@ postgres/db_username openproject
 postgres/db_password SbrqsxaQU8mvzHNDPw2akMAlLBmgWA5B
 server/autoinstall install
 server/variant apache2
-server/hostname 191.168.200.33
+server/hostname 192.168.1.33
 server/server_path_prefix /openproject
 server/ssl no
 repositories/api-key A7FuNZtaoUawT8gnuwd1v7upqnfXrKXO

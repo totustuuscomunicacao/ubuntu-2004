@@ -42,4 +42,4 @@
 #                   GUI nogroup: anongid=65534
 #
 # SHARE            NETWORKING    OPTIONS
-/mnt/nfs           191.168.200.0/22(rw,insecure,sync,no_subtree_check,all_squash)
+/mnt/nfs           192.168.1.0/22(rw,insecure,sync,no_subtree_check,all_squash)

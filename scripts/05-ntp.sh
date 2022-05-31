@@ -43,7 +43,7 @@
 # Configuração do NTP Client no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T
 #	sudo apt install ntpdate ntpstat
-# 	sudo ntpdate -s 191.168.200.33 ou ntp.biblioteca.itauna.mg.gov.intra (set the date and time via NTP)
+# 	sudo ntpdate -s 192.168.1.33 ou ntp.biblioteca.itauna.mg.gov.intra (set the date and time via NTP)
 #	sudo ntpdate -dquv ntp.biblioteca.itauna.mg.gov.intra (update date and time via NTP)
 #	sudo ntpq -pn (standard NTP query program)
 #	sudo ntpq -c sysinfo (standard NTP query program)
@@ -64,7 +64,7 @@
 #			Servidor: ntp.biblioteca.itauna.mg.gov.intra <Atualizar Agora>
 #	date
 #	time (somente no CMD - PowerShell não funciona)
-#	net time \\191.168.200.33 /set /yes (Somente após instalar o SAMBA-4, WINS e NetBIOS)
+#	net time \\192.168.1.33 /set /yes (Somente após instalar o SAMBA-4, WINS e NetBIOS)
 #	w32tm /query /status
 #	w32tm /query /configuration
 #	w32tm /config /syncfromflags:manual /manualpeerlist:”ntp.biblioteca.itauna.mg.gov.intra” /reliable:yes /update

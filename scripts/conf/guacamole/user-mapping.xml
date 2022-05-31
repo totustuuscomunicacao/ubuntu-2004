@@ -24,21 +24,21 @@
         <!-- configuração do acesso remoto via OpenSSH-->
         <connection name="Ubuntu-Server-SSH">
             <protocol>ssh</protocol>
-            <param name="hostname">191.168.200.33</param>
+            <param name="hostname">192.168.1.33</param>
             <param name="port">22</param>
             <param name="username">administrador</param>
         </connection>
         <!-- configuração do acesso remoto via Telnet-->
         <connection name="Ubuntu-Server-Telnet">
             <protocol>telnet</protocol>
-            <param name="hostname">191.168.200.33</param>
+            <param name="hostname">192.168.1.33</param>
             <param name="port">23</param>
             <param name="username">administrador</param>
         </connection>
         <!-- configuração do acesso remoto via RDP-->
         <connection name="Windows-7-RDP">
             <protocol>rdp</protocol>
-            <param name="hostname">191.168.200.103</param>
+            <param name="hostname">192.168.1.103</param>
             <param name="port">3389</param>
             <param name="username">administrador</param>
             <param name="ignore-cert">true</param>
@@ -49,7 +49,7 @@
         <!-- configuração do acesso remoto via RDP-->
         <connection name="Windows-10-RDP">
             <protocol>rdp</protocol>
-            <param name="hostname">191.168.200.104</param>
+            <param name="hostname">192.168.1.104</param>
             <param name="port">3389</param>
             <param name="username">administrador</param>
             <param name="ignore-cert">true</param>
@@ -57,7 +57,7 @@
         <!-- configuração do acesso remoto via VNC-->
         <connection name="Linux-Mint-VNC">
             <protocol>vnc</protocol>
-            <param name="hostname">191.168.200.101</param>
+            <param name="hostname">192.168.1.101</param>
             <param name="port">5900</param>
         </connection>
 
