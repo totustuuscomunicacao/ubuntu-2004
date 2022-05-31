@@ -29,7 +29,7 @@ MULTIPORTSLIBTCP="$RULES/multiportslibtcp"  #Multiplas Portas Liberadas TCP
 DNSSERVER="$RULES/dnsserver"                #Servidores DNS liberados
 #
 # Declarando as variáveis da Interfaces de Rede e Subrede do IPTables
-LAN="ens160"           #Interface de Rede LAN
+LAN="enp0s3"           #Interface de Rede LAN
 REDE="191.168.200.0/22"   #Endereço da Subrede
 #
 # opção da variável $1: Parâmetro número 1 (da linha de comando ou função)

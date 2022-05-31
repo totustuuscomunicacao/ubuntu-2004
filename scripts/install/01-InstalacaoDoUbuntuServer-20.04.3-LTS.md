@@ -108,7 +108,7 @@ Instalação do Ubuntu Server: https://ubuntu.com/server/docs/installation
 	_ 		Variant: [English (US)] ou [Portuguese (Brazil)]
 	_ 	<Done>
 	_ 04. Network connections
-	_ 		ens160 eth <Enter>
+	_ 		enp0s3 eth <Enter>
 	_ 			Edit IPv4 <Enter>
 	_ 				IPv4 Method: Manual <Enter>
 	_ 					Subnet: 191.168.200.0/22 <Tab>

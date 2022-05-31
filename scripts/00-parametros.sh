@@ -80,7 +80,7 @@ IPV4SERVER="191.168.200.33"
 # CUIDADO!!! o nome da interface de rede pode mudar dependendo da instalação do Ubuntu Server,
 # verificar o nome da interface com o comando: ip address show e mudar a variável INTERFACE com
 # o nome correspondente.
-INTERFACE="ens160"
+INTERFACE="enp0s3"
 #
 # Variável do arquivo de configuração da Placa de Rede do Netplan do Servidor Ubuntu
 # CUIDADO!!! o nome do arquivo de configuração da placa de rede pode mudar dependendo da 
@@ -144,7 +144,7 @@ PORTSHELLINABOX="4200"
 # 04. tail -f /var/log/dmesg | grep dhcpd = filtrando as mensagens de erros do ISC DHCP
 # 05. less /var/lib/dhcp/dhcpd.leases = filtrando os alugueis de endereços IPv4 do ISC DHCP
 # 06. dhcp-lease-list = comando utilizado para mostrar os leases dos endereços IPv4 do ISC DHCP
-# 07. tcpdump -vv -n -i ens160 port bootps or port bootpc = dump dos pacotes do ISC DHCP
+# 07. tcpdump -vv -n -i enp0s3 port bootps or port bootpc = dump dos pacotes do ISC DHCP
 #
 # Variável de instalação do serviço de rede ISC DHCP Server
 DHCPINSTALL="isc-dhcp-server net-tools"

@@ -19,7 +19,7 @@ network:
   ethernets:
     #
     # Configuração do Nome da Placa de Rede do Ubuntu Server
-    ens160:
+    enp0s3:
       #
       # Configuração do Endereço IPv4 Dinâmico via DHCP do Ubuntu Server
       # OBSERVAÇÃO: por padrão o endereço IPv4 dinâmico em servidores não é utilizado

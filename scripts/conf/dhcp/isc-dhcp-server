@@ -16,7 +16,7 @@
 # Configuração da Interface de Rede que o ISC DHCP Server irá escutar as solicitações
 # de endereçamento IPv4
 # OBSERVAÇÃO: o suporte ao IPv6 foi desativado e não será utilizado nesse curso
-INTERFACESv4="ens160"
+INTERFACESv4="enp0s3"
 #INTERFACESv6=""
 #
 # Localização do caminho padrão do arquivo de configuração do ISC DHCP Server

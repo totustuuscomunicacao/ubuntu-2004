@@ -68,7 +68,7 @@ USER="administrator"
 PASSWORD="123456"
 LEVEL="2008_R2"
 SITE="biblioteca.itauna.mg.gov.intra"
-INTERFACE="ens160"
+INTERFACE="enp0s3"
 GATEWAY="191.168.200.51"
 #
 # Variáveis de configuração do DNS
